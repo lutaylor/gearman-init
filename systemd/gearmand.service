@@ -1,4 +1,5 @@
 #customization gearmand, requires mariadb - DGI
 .include /usr/lib/systemd/system/gearmand.service
 [Unit]
-After=mariadb.service
+#Uncomment when mysql is on same server as gearmand. 
+#After=mariadb.service
