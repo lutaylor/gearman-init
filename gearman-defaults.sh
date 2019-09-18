@@ -19,3 +19,4 @@ GEARMAN_USER=${GEARMAN_USER:-www-data}
 ROUTER=${ROUTER:-"$DRUSH --root=$DRUPAL_ROOT -u 1 islandora-job-router"}
 SITE_URI_LIST=${SITE_URI_LIST:-$(for i in `find -L $DRUPAL_ROOT -name settings.php`; do basename `dirname $i`; done)}
 CUSTOM_WORKER_FUCTIONS=${CUSTOM_WORKER_FUCTIONS:-"-f default"}
+CUSTOM_WORKER_2_FUCTIONS=${CUSTOM_WORKER_2_FUCTIONS:-"-f default"}
